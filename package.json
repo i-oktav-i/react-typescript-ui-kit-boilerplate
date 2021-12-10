@@ -40,8 +40,8 @@
     }
   },
   "files": [
-    "./build/components",
-    "./src/"
+    "build/**/*",
+    "src/**/*{tsx,css}"
   ],
   "dependencies": {
     "classnames": "^2.3.1",

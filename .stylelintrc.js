@@ -4,33 +4,24 @@ module.exports = {
   ],
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-css-modules',
     'stylelint-config-recess-order',
     'stylelint-config-htmlacademy',
+    'stylelint-config-css-modules',
   ],
   ignoreFiles: [
     '**/*.tsx',
   ],
   rules: {
-    'csstree/validator': {
-      ignore: ['composes', 'var', 'font-display'],
-    },
-    'function-url-quotes':               'always',
-    'string-quotes':                     'double',
-    'no-empty-source':                   null,
-    'at-rule-no-unknown':                null,
-    'no-descending-specificity':         null,
-    'selector-list-comma-newline-after': null,
-    'selector-pseudo-class-no-unknown':  [
-      true,
-      {
-        ignorePseudoClasses: [
-          'global',
-          'local',
-        ],
-      },
-    ],
-    'color-hex-length':   'short',
-    'value-keyword-case': null,
+    'function-url-quotes':                       'always',
+    'string-quotes':                             'double',
+    'no-empty-source':                           null,
+    'at-rule-no-unknown':                        null,
+    'no-descending-specificity':                 null,
+    'selector-list-comma-newline-after':         null,
+    'color-hex-length':                          'short',
+    'value-keyword-case':                        null,
+    'max-nesting-depth':                         null,
+    'max-empty-lines':                           1,
+    'declaration-block-no-duplicate-properties': [true, { ignoreProperties: ['composes'] }],
   },
 };
